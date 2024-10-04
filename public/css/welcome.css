@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Figtree', sans-serif;
+    background-image: url('/img/design3.jpg');
+    color: #333;
+    overflow: hidden;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.377);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 90px ;
+
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.menu a:hover {
+    color: darkgoldenrod;
+}/* Container Text Styling */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-text {
+    text-align: center;
+    background-color: #051946;
+    padding: 3rem;
+    border-radius: 15px;
+    color: white;
+    width: 50%; /* Adjust width */
+}
+
+/* Headings */
+h1, h2 {
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive styles for headings */
+h1 {
+    font-size: 2.5rem; /* Large screen size */
+}
+
+h2 {
+    font-size: 1.5rem; /* Large screen size */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Medium screen size */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Medium screen size */
+    }
+
+    .logo img {
+        max-width: 120px; /* Reduce logo size on smaller screens */
+    }
+
+    .menu a {
+        font-size: 0.9rem; /* Smaller font for menu links */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Small screen size */
+    }
+
+    h2 {
+        font-size: 1rem; /* Small screen size */
+    }
+
+    .container-text {
+        width: 100%; /* Full width on smaller screens */
+        padding: 1.5rem;
+    }
+
+    .menu {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu a {
+        font-size: 0.8rem;
+    }
+
+    .logo img {
+        max-width: 100px; /* Further reduce logo size */
+    }
+}
+
+/* Link Styling */
+a {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
